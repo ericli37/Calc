@@ -7,6 +7,13 @@ body {
     background-color: hsl(0, 0%, 95%);
 }
 
+#border {
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: hsl(0, 0%, 11%);
+}
+
 #calculator {
     font-family: Arial, sans-serif;
     background-color: hsl(0, 0%, 15%);
@@ -52,9 +59,41 @@ button:active{
 .operator-btn {
     background-color: hsl(35, 100%, 55%);
 }
+.mode {
+    background-color: hsl(35, 100%, 55%);
+    font-size: 2.4rem;
+}
+.social {
+    background-color: hsl(201.36, 100%, 34.71%);
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Horizontally center the text */
+    align-items: center; /* Vertically center the text */
+    text-align: center; /* Ensure text alignment */
+    text-decoration: none;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
 .operator-btn:hover {
     background-color: hsl(35, 100%, 65%);
 }
 .operator-btn:active {
     background-color: hsl(35, 100%, 75%);
+}
+.mode:hover {
+    background-color: hsl(35, 100%, 65%);
+}
+.mode:active {
+    background-color: hsl(35, 100%, 75%);
+}
+.social:hover {
+    background-color: hsl(201.36, 100%, 45%);
+}
+.social:active {
+    background-color: hsl(201.36, 100%, 55%);
 }
