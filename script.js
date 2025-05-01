@@ -10,7 +10,8 @@ function clearDisplay() {
 
 function calculate() {
     try {
-        display.value = eval(display.value);
+        const expression = display.value.replace(/(\d+)\^(\d+)/g, 'Math.pow($1, $2)');
+        display.value = eval(expression);
     } catch (error) {
         display.value = 'Error';
     }
